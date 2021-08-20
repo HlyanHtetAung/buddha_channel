@@ -1,0 +1,19 @@
+.categoryName{ 
+    text-align:center;
+    padding: 20px;
+    color: var(--font-color);
+    
+    
+}
+  
+  .posters{
+    margin-top: 10px;
+
+  }
+  
+  .postersContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }

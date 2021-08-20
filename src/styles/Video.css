@@ -1,0 +1,14 @@
+.videoDiv{
+    margin-bottom: 20px;
+}
+
+.videoDiv >  h2 {
+    color: var(--font-color);
+    line-height: 50px;
+}
+
+.videoDiv >  p {
+    color: whitesmoke;
+    padding-left: 30px;
+    margin-top: 10px;
+}

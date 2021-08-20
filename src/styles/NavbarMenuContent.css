@@ -1,0 +1,13 @@
+.navbarMenu__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbarMenu__contentIcon{
+      margin-right: 10px;
+  }
+
+.navbarMenu__inside > h3 {
+    padding: 15px 30px;
+    /* margin-right: 10px;   */
+}

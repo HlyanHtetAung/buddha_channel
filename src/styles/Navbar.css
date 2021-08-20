@@ -1,0 +1,200 @@
+.navbar{
+    align-items: center;
+    background-color: #181818 ;
+    border-radius: 2px;
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar__hamburgerIcon{
+    margin-right: 10px;
+    text-align: center;
+    display: none; 
+}
+
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+  }
+
+.navbar__right{
+    display: flex;
+    align-items: center; 
+}
+
+.navbar__logo{
+    cursor: pointer;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.navbar__searchBar{
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    display: flex;
+    width: 500px;
+}
+
+.navbar__searchIconDiv{ 
+    border-right: 1px solid var(--font-color);
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.navbar_searchIcon{
+    font-size: 25px !important;
+}
+
+.navbar__searchBar > input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding-left: 10px;
+    background-color: transparent;
+    color: white ;
+    text-align: center;
+}
+
+
+.navbar__right__header >h3 {
+    margin: 0px 5px;
+    cursor: pointer;
+    display: none;
+    white-space: nowrap;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar__right__header > h3:hover{
+    background-color:rgba(49, 120, 133, 0.8);
+    transition: all 0.5s ease;
+    color: white;
+}
+
+
+
+
+.navbar__categories{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+
+.dropdown{
+    position: relative;
+    background-color:rgba(49, 120, 133);
+    cursor: pointer;
+    display: none;  
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.dropdown__content{
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    display: none;
+    height: 150px;
+    min-width: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.dropdown__content > p {
+    padding: 10px;
+    text-align: left;
+    color: black;
+}
+
+.dropdown__content > p:hover{
+   background-color:rgba(49, 120, 133, 0.8);
+   color: white;
+}
+
+.dropdown:hover{
+    background-color: rgba(49, 120, 133,0.8);
+}
+
+.dropdown:hover .dropdown__content{
+    display: block;
+}
+
+
+@media screen and (max-width: 1410px){
+    .navbar__hamburgerIcon{
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width:840px){
+    .navbar__searchBar{
+       width: 250px;
+    }
+}
+
+@media screen and (max-width:430px){
+    .navbar__searchBar{
+       width: 200px;
+    }
+}
+
+@media screen and (min-width: 1410px){
+    .navbar__right__header > h3{
+        display: inline-flex;
+    }
+    .navbar__right__about > a {
+        display: inline-flex;
+    }
+    .dropdown{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__right {
+        width: 100%;
+    }
+    .navbar__searchBar{
+        margin: 10px 0px;
+        flex: 1;
+    }
+    .navbar__logo{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar__hamburgerIcon{
+        position: absolute;
+        left: 10px;
+        top: 25px;
+    }
+}
+

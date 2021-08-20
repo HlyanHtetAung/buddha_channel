@@ -1,0 +1,38 @@
+.home{
+  position: relative;
+}
+
+.home > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* object-position: 0% 70%; */
+}
+
+.home__quoteDiv{
+   position: absolute;
+   top: 40%;
+   text-align: center;
+   width: 100%;
+}
+
+.home__quote{
+    padding: 20px 10px;
+    font-size: 30px;
+    background-image: linear-gradient(90deg, red,black);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-transform: capitalize;  
+}
+
+.home__quoteOwner{
+  font-size: 30px;
+}
+
+.home > h2{
+  text-align: center;
+}
+
+
+

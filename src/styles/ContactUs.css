@@ -1,0 +1,69 @@
+.contactUs{
+    align-items: center;
+    color: var(--font-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+
+.contactUs__header > h1 {
+    text-align: center;
+    text-transform: uppercase;
+   border-bottom: 2px solid var(--font-color);
+   color:  var(--font-color);
+   padding: 10px 0px;
+}
+
+
+.contactUs__contentDiv{
+    width: 500px;
+    cursor: pointer;
+    margin: 15px 20px;
+    display: flex;
+    height: 120px;
+    border: 1px solid var(--font-color);
+    position: relative;
+   
+}
+
+.contactUs__contentDiv:hover{
+    background-color:rgba(49, 120, 133, 0.8);
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.contactUs__content{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contactUs__icon{
+    margin-right: 20px;
+    font-size: 50px !important;
+}
+
+.contactUs__hoverClipboard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 120, 133);
+}
+
+.contactUs__hoverClipboard > h2{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+.contactUs__copied{
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    color: green;
+}

@@ -1,0 +1,95 @@
+
+.personalDetailContainer{
+   
+}
+
+.personalDetailContainer > h2{
+    color: var(--font-color);
+    margin-bottom: 20px;
+}
+
+.videoDetail__personDetailContainer{
+    display: flex; 
+    align-items: center;
+}
+
+.videoDetail__personDetailContainerLeft{
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.videoDetail__personDetailContainerLeft >  img {
+    max-height: 200px;
+    border-radius: 0px 50px 0px 50px;
+    border: 1px solid var(--font-color); 
+  
+}
+
+.videoDetail__personDetailContainerRight {
+    flex: 0.6;
+    background-color: black;
+    padding: 20px;
+   width: 520px;
+    
+}
+
+.videoDetail__personDetailContainerRight__List {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.videoDetail__personDetailContainerRight__List > h3 {
+    color: var(--font-color);
+    width: 160px;
+    text-align: right; 
+}
+
+.videoDetail__personDetailContainerRight__List > p {
+    color: whitesmoke;
+    margin-left: 30px;
+    width: 499px;
+   
+}
+
+.videoDetail__personDetailContainerRight > button {
+    border: none;
+    background-color: var(--hover-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity:  0.8;
+    width: 100%;
+    color: white;
+    margin: 10px 0px;
+}
+
+
+.videoDetail__personDetailContainerRight > button:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 930px) {
+    .videoDetail__personDetailContainer{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px;
+    }
+
+    .videoDetail__personDetailContainerRight {
+       width: 500px;
+       margin: 20px 0px;
+    }
+
+    .personalDetailContainer > h2{
+        text-align: center;
+        padding: 0;
+    }
+
+    
+.videoDetail__personDetailContainerRight__List > h3{
+    width: 200px;
+}
+    
+}
+

@@ -1,0 +1,32 @@
+
+
+h1{
+    font-size: 30px;
+    font-weight: 900;  
+    
+}
+
+h3{
+    font-size: 15px;
+}
+
+.app{
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+
+}
+
+.app__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+@media screen and (max-width: 1085px){
+    .app__wrapper{
+        margin: 0;
+        width: 100%;
+    }
+}
